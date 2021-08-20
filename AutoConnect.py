@@ -12,5 +12,5 @@ os.system('wmic process where "name like \'%DibServer%\'" call terminate')
 time.sleep(5)        
 
 app = application.Application()
-app.start('C:\DAISHIN\STARTER\\ncStarter.exe /prj:cp /id:ksh5569 /pwd:ksh0924! /pwdcert:seohyunkim0924!! /autostart')
+app.start('C:\DAISHIN\STARTER\\ncStarter.exe /prj:cp /id:* /pwd:* /pwdcert:* /autostart')
 time.sleep(60)
