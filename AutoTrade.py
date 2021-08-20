@@ -13,7 +13,7 @@ def post_message(token, channel, text):
         data={"channel": channel,"text": text}
     )
  
-myToken = "xoxb-2383270777063-2421647110800-RwNvXjA48g1StsvFB8Jk3AQd"
+myToken = "d"
 def dbgout(message):
     """인자로 받은 문자열을 파이썬 셸과 슬랙으로 동시에 출력한다."""
     print(datetime.now().strftime('[%m/%d %H:%M:%S]'), message)
