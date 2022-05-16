@@ -8,7 +8,7 @@ stock_list = ['A005930', 'A000660', 'A035420', 'A207940', 'A035720', 'A005935', 
 
 stock_list1000 = ['A028050', 'A282330', 'A161890', 'A001720', 'A009410', 'A068290', 'A105840', 'A004540', 'A001260', 'A027970', 'A010820']
 stock_list0 = ['A137310', 'A138040', 'A271560', 'A000060', 'A000990', 'A030000', 'A003090', 'A005250', 'A192080', 'A002840', 'A284740', 'A003230', 'A006390', 'A008490', 'A017960', 'A339770', 'A002960', 'A035510', 'A002780', 'A008060', 'A094280', 'A023450', 'A244920', 'A248170', 'A134790', 'A118000', 'A140910']
-def per_eps_lastym(code):
+def stock(code):
     # Create Object
     instMarketEye = win32com.client.Dispatch("CpSysDib.MarketEye")
     instCpMarketWatch = win32com.client.Dispatch("CpSysDib.CpMarketWatch")
