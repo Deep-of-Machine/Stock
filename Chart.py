@@ -46,7 +46,7 @@ def stock(code):
 
 
 for i in stock_list:
-    per_eps_lastym(i)
+    stock(i)
     time.sleep(0.4)
     print(i)
     print(chart)
