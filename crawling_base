@@ -1,0 +1,24 @@
+import requests
+from bs4 import BeautifulSoup
+
+codes = []
+url = f'http://www.paxnet.co.kr/news/005930/stock?currentPageNo=1&stockCode=005930&objId=S005930'
+response = requests.get(url)
+
+if response.status_code == 200:
+    html = response.text
+    soup = BeautifulSoup(html, 'html.parser')
+    selected = soup.select(f'#contents > div.cont-area > div.board-thumbnail > ul > li:nth-child({i}) > dl > dt > a')
+    print(selected)
+
+else : 
+    print(response.status_code)
+
+
+
+
+
+#naver_logo = bs_html.find("span", {"class":"school-desc-wrap"})
+#,{"class":"tables-board board-list no-thead bbs-board"}
+#print(naver_logo)
+#print(naver_logo.text)
