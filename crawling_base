@@ -8,7 +8,7 @@ response = requests.get(url)
 if response.status_code == 200:
     html = response.text
     soup = BeautifulSoup(html, 'html.parser')
-    selected = soup.select(f'#contents > div.cont-area > div.board-thumbnail > ul > li:nth-child({i}) > dl > dt > a')
+    selected = soup.select('#contents > div.cont-area > div.board-thumbnail > ul > li:nth-child(1) > dl > dt > a')
     print(selected)
 
 else : 
